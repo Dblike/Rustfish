@@ -2,6 +2,7 @@
 name = "rustfish"
 version = "0.1.0"
 authors = ["Syzygy"]
+edition = "2018"
 
 [dependencies]
 memmap = "0.6.2"

@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
 
-use bitboard::*;
-use types::*;
+use super::bitboard::*;
+use super::types::*;
 
 // There are 24 possible pawn squares: the first 4 files and ranks from 2 to 7
 const MAX_INDEX: usize = 2*24*64*64;

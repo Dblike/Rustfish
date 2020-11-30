@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
 
-use types::*;
-use bitboard::*;
-use position::Position;
+use super::types::*;
+use super::bitboard::*;
+use super::position::Position;
 
 const CAPTURES: i32 = 0;
 const QUIETS: i32 = 1;

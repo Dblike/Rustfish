@@ -1,8 +1,6 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
 
-use types::*;
-
-use std;
+use super::types::*;
 
 // TTEntry struct is the 10 bytes transposition-table entry, defined as below:
 //

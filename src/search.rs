@@ -1,20 +1,19 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
 
-use bitboard::*;
-use evaluate;
-use evaluate::evaluate;
-use movegen::*;
-use movepick::*;
-use position::*;
-use tb;
-use threads;
-use timeman;
-use tt;
-use types::*;
-use uci;
-use ucioption;
+use super::bitboard::*;
+use super::evaluate;
+use super::evaluate::evaluate;
+use super::movegen::*;
+use super::movepick::*;
+use super::position::*;
+use super::tb;
+use super::threads;
+use super::timeman;
+use super::tt;
+use super::types::*;
+use super::uci;
+use super::ucioption;
 
-use std;
 use std::io::stdout;
 use std::io::Write;
 use std::time::Instant;
@@ -310,7 +309,7 @@ pub fn mainthread_search(pos: &mut Position, th: &threads::ThreadCtrl) {
         && limits().depth == 0
         && pos.root_moves[0].pv[0] != Move::NONE
     {
-        let mut common = th.common.lock().unwrap();
+        let common = th.common.lock().unwrap();
         let result = &mut common.result.lock().unwrap();
         if result.score > pos.root_moves[0].score
             && (result.depth >= pos.completed_depth

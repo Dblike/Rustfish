@@ -1,9 +1,7 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
 
-use bitboard::*;
-use types::*;
-
-use std;
+use super::bitboard::*;
+use super::types::*;
 
 macro_rules! S { ($x:expr, $y:expr) => (Score(($y << 16) + $x)) }
 

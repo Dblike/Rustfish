@@ -1,11 +1,9 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
 
-use bitboard::*;
-use endgame::*;
-use position::Position;
-use types::*;
-
-use std;
+use super::bitboard::*;
+use super::endgame::*;
+use super::position::Position;
+use super::types::*;
 
 pub struct Entry {
     key: Key,

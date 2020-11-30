@@ -1,16 +1,15 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
 
-use benchmark::*;
-use misc;
-use movegen::*;
-use position::*;
-use search;
-use threads;
-use threads::PosData;
-use types::*;
-use ucioption;
+use super::benchmark::*;
+use super::misc;
+use super::movegen::*;
+use super::position::*;
+use super::search;
+use super::threads;
+use super::threads::PosData;
+use super::types::*;
+use super::ucioption;
 
-use std;
 use std::env;
 use std::sync::{Arc, RwLock};
 use std::time::Instant;

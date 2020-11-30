@@ -1,15 +1,14 @@
 // SPDX-License-Identifier: (GPL-3.0-or-later OR UPL-1.0)
 
-use bitboard::*;
-use movegen::*;
-use position::Position;
-use position::zobrist::material;
-use search::RootMoves;
-use types::*;
-use ucioption;
+use super::bitboard::*;
+use super::movegen::*;
+use super::position::Position;
+use super::position::zobrist::material;
+use super::search::RootMoves;
+use super::types::*;
+use super::ucioption;
 
 use memmap::*;
-use std;
 use std::cell::UnsafeCell;
 use std::collections::HashMap;
 use std::fs;

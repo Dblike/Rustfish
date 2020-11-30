@@ -2,10 +2,8 @@
 
 #![allow(dead_code)]
 
-use types::*;
-use uci;
-
-use std;
+use super::types::*;
+use super::uci;
 
 #[derive(Clone, Copy, PartialEq, Eq)]
 pub struct Bitboard(pub u64);

@@ -1,10 +1,8 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
 
-use tb;
-use threads;
-use tt;
-
-use std;
+use super::tb;
+use super::threads;
+use super::tt;
 
 type OnChange = Option<fn(&OptVal)>;
 

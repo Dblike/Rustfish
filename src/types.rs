@@ -2,8 +2,6 @@
 
 #![allow(dead_code)]
 
-use std;
-
 #[derive(Clone, Copy, PartialEq, Eq, Hash)]
 pub struct Key(pub u64);
 
@@ -117,7 +115,7 @@ impl CastlingRightTrait for BlackOOO {
 
 impl CastlingRight {
     pub fn make(c: Color, cs: CastlingSide) -> CastlingRight {
-        use types::CastlingSide::*;
+        use CastlingSide::*;
         match (c, cs) {
             (WHITE, KING) => WHITE_OO,
             (WHITE, _   ) => WHITE_OOO,

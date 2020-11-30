@@ -1,13 +1,11 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
 
-use bitbases;
-use bitboard::*;
-use movegen::*;
-use position::Position;
-use position::zobrist;
-use types::*;
-
-use std;
+use super::bitbases;
+use super::bitboard::*;
+use super::movegen::*;
+use super::position::Position;
+use super::position::zobrist;
+use super::types::*;
 
 pub type EvalFn = fn(&Position, Color) -> Value;
 pub type ScaleFn = fn(&Position, Color) -> ScaleFactor;

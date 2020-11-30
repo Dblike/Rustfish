@@ -1,10 +1,8 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
 
-use search;
-use types::*;
-use ucioption;
-
-use std;
+use super::search;
+use super::types::*;
+use super::ucioption;
 
 static mut START_TIME: Option<std::time::Instant> = None;
 static mut OPTIMUM_TIME: i64 = 0;

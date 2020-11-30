@@ -1,12 +1,10 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
 
-use bitboard::*;
-use material;
-use pawns;
-use position::Position;
-use types::*;
-
-use std;
+use super::bitboard::*;
+use super::material;
+use super::pawns;
+use super::position::Position;
+use super::types::*;
 
 pub const TEMPO: Value = Value(20);
 
